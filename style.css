@@ -1,13 +1,11 @@
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #fff;
-    background-color: #1e1e1e; /* Dark background for a modern look */
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
 }
 
 .container {
@@ -17,103 +15,96 @@ body {
 }
 
 header {
-    background: #282c34; /* Darker background for the header */
-    color: #61dafb; /* Bright accent color */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 0;
-    font-size: 2.5rem;
+    background: #004d40;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 nav {
-    background: #20232a; /* Dark navigation background */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
+    padding: 0.5rem 0;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #61dafb; /* Bright accent color */
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffffff; /* Lighter color on hover */
+nav a:hover {
+    background: #00796b;
 }
 
-main {
-    padding: 20px 0;
+.profile {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.profile p {
+    font-size: 1.3rem;
+    color: #c8e6c9;
 }
 
 section {
-    margin-bottom: 40px;
+    padding: 2rem 0;
 }
 
 section h2 {
-    background: #282c34; /* Dark background for section headers */
-    color: #61dafb; /* Bright accent color for headings */
-    padding: 10px;
     text-align: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #004d40;
 }
 
-.card {
-    background: #282c34; /* Dark background for cards */
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.skills, .education, .projects {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
+.skill, .education-item, .project {
+    margin-bottom: 1.5rem;
 }
 
-.card-content {
-    padding: 15px;
+.skill h3, .education-item h3, .project h3 {
+    font-size: 1.8rem;
+    color: #00796b;
 }
 
-.card h3 {
-    color: #61dafb; /* Bright accent color for card titles */
+.skills ul, .education-item p, .projects p {
+    margin: 0.5rem 0;
 }
 
-.card:hover {
-    transform: scale(1.05); /* Slightly enlarge card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+.contact ul {
+    list-style: none;
+    padding: 0;
 }
 
-.service {
-    background: #282c34; /* Dark background for services */
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.contact ul li {
+    margin: 0.5rem 0;
+}
+
+.contact a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background: #20232a; /* Dark footer background */
-    color: #61dafb; /* Bright accent color */
+    background: #004d40;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    padding: 1rem 0;
 }
